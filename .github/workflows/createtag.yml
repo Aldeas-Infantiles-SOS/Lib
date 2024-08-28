@@ -1,0 +1,57 @@
+name: CI/CD - Auto Tagging
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run ci
+
+  create_tag:
+    name: Create Tag
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Create Semantic Version Tag
+        uses: Klemensas/action-autotag@stable
+        with:
+          tag_prefix: 'v'
+          package_root: './'
+          changelog_structure: true
+
+      - name: Notify Team
+        run: |
+          git fetch --tags
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
+          CHANGES=$(git log $LATEST_TAG..HEAD --oneline)
+          echo "CHANGES=$CHANGES" >> $GITHUB_ENV
+          curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -d "{\"title\": \"Nuevo Tag: $LATEST_TAG\", \"body\": \"Se ha creado un nuevo tag en el proyecto: $LATEST_TAG.\\n\\nCambios incluidos en esta versión:\\n\\n$CHANGES\"}" \
+          https://api.github.com/repos/${{ github.repository }}/issues
+
+permissions:
+  contents: write
