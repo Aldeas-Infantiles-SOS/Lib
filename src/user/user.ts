@@ -1,16 +1,12 @@
 /**
  * Tipo de usuario en el sistema.
  */
-enum UserType {
-    Admin,
-    Operador,
-    Cuidador,
-  }
+export type UserRole = 'Admin'|'Operador'|'Cuidador';
   
   /**
    * Representa un usuario del sistema.
    */
-  export interface User {
+  export interface UserInfo {
     /** Id de firebase auth */
     firebaseUserId: string;
   
@@ -27,7 +23,7 @@ enum UserType {
     profilePhoto: string;
   
     /** Tipo de usuario - ver {@link UserType} */
-    userType: UserType;
+    userType: UserRole;
   
     /** Puesto de trabajo */
     jobPosition: string;
