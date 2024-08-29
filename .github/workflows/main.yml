@@ -1,9 +1,9 @@
 name: Auto Tag
 
 on:
-  push:
+  pull_request:
     branches:
-      - main  
+      - main
 
 jobs:
   create_tag:
