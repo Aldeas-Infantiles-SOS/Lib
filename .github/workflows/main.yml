@@ -1,0 +1,28 @@
+name: Auto Tag
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  create_tag:
+    name: Crear Tag
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Necesario para crear y empujar tags
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'  # Fetch all history for versioning
+
+      - name: Crear Tag
+        id: create_tag
+        uses: Klemensas/action-autotag@stable
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag_prefix: 'v'
+          versioning: 'semver' 
