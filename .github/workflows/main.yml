@@ -1,28 +1,49 @@
-name: Auto Tag
+name: Construir Interfaces Base de Datos
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
 jobs:
-  create_tag:
-    name: Crear Tag
+  construir:
+    name: Construir Interfaces
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write  # Necesario para crear y empujar tags
-
     steps:
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v2
-        with:
-          fetch-depth: '0'  # Fetch all history for versioning
 
-      - name: Crear Tag
-        id: create_tag
+      - name: Configurar Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Cache de NPM
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Instalar Dependencias
+        run: npm install
+
+      - name: Limpiar lib
+        run: |
+          rm -Rf lib
+
+      - name: Crear Build
+        run: npm run ci
+
+  creartag:
+    name: Crear Tag
+    needs: construir
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Crear tag
         uses: Klemensas/action-autotag@stable
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: 'v'
-          versioning: 'semver' 
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          tag_prefix: 'SOSTypes'
