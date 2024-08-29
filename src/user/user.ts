@@ -1,7 +1,7 @@
 /**
  * Tipo de usuario en el sistema.
  */
-export type UserRole = 'Admin'|'Operador'|'Cuidador';
+export type UserRole =  'Admin'|'Operador'|'Cuidador';
   
   /**
    * Representa un usuario del sistema.
