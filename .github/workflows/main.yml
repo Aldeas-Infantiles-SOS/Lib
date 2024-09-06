@@ -1,50 +1,40 @@
-name: Construir Interfaces Base de Datos
+name: Create Tag
 
 on:
-  push:
+  pull_request: # El workflow se activa en eventos de pull request
+    types:
+      - closed
     branches:
-      - main
+      - main # Solo se ejecuta si el pull request es hacia la rama 'main'
 
 jobs:
-  construir:
-    name: Construir Interfaces
-    runs-on: ubuntu-latest
+  tag:
+    if: github.event.pull_request.merged == true # Condición: El workflow solo se ejecuta si el PR fue mergeado
+    runs-on: ubuntu-latest 
+    permissions:
+      contents: write # Otorga permisos de escritura para crear un nuevo tag en el repositorio
+
+    strategy:
+      matrix:
+        node-version:
+          - 18 # Especifica la versión de Node.js a utilizar (en este caso, la versión 18)
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Configurar Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
+    - name: Set up Node.js
+      uses: actions/setup-node@v2 # Configura el entorno Node.js
+      with:
+        node-version: ${{ matrix.node-version }} # Utiliza la versión de Node.js especificada en el matrix
 
-      - name: Cache de NPM
-        uses: actions/cache@v3
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+    - name: Install dependencies
+      run: npm install # Instala las dependencias del proyecto utilizando npm
 
-      - name: Instalar Dependencias
-        run: npm install
-
-      - name: Limpiar lib
-        run: rm -Rf lib
-
-      - name: Crear Build
-        run: npm run ci
-
-  creartag:
-    name: Crear Tag
-    needs: construir
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        
-      - name: Crear tag
-        uses: Klemensas/action-autotag@stable
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: 'SOSTypes'
+    - name: Run autotag action
+      uses: phish108/autotag-action@v1.1.55 # Ejecuta la acción de autotag para generar el nuevo tag
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }} # Token de GitHub para autenticar la acción
+        bump: patch
+        release-branch: main # La rama en la que se crea el tag (main)
+        with-v: true # El tag tendrá el prefijo 'v' (por ejemplo, 'v1.0.0')
