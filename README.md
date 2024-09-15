@@ -1,43 +1,24 @@
 # SOSLib
 
-## Version
+## Versión
 
-1.0.0
+1.1.0
 
-## Nuevas características
+## Notas de la versión
 
-### Modelo de usuario creado
+### Modelo de sesión creado
 
 Atributos agregados:  
 
-- Id de firebase auth.
-  - Nombre atributo: firebaseUserId.
+- Fecha y hora de inicio de la sesión.
+  - Nombre atributo: startTime.
+  - Tipo: Date.
+- Fecha y hora en que finaliza la sesión.
+  - Nombre atributo: endTime.
+  - Tipo: Date.
+- Id de usuario.
+  - Nombre atributo: userId.
   - Tipo: string.
-- Nombre usuario.
-  - Nombre atributo: firstName.
+- Id de sesión.
+  - Nombre atributo: sessionId.
   - Tipo: string.
-- Apellidos usuario.
-  - Nombre atributo: lastName.
-  - Tipo: string.
-- Correo electrónico usuario.
-  - Nombre atributo: email.
-  - Tipo: string.
-- URL de la foto de perfil.
-  - Nombre atributo: profilePhoto.
-  - Tipo: string.
-- Tipo de usuario.
-  - Nombre atributo: userType.
-  - Tipo: UserRole.
-- Puesto de trabajo.
-  - Nombre atributo: jobPosition.
-  - Tipo: string.
-- Fecha y hora de creación.
-  - Nombre atributo: created
-  - Tipo: number.
-- Fecha y hora de última actualización.
-  - Nombre atributo: lastUpdate
-  - Tipo: number.
-
-### Roles de usuario creados
-
-El ***userType*** de un usuario puede ser un **UserRole** de **Admin**, **Operador** o **Cuidador**.
