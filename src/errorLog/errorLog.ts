@@ -15,9 +15,9 @@ export interface ErrorLogInfo {
     /** Correo del usuario registrado con el error. */
     userEmail: string;
 
-    /** Información adicinal del error. */
+    /** Información adicional del error. */
     additionalData: string;
 
     /** Fecha y hora en que se registra el error. */
-    timestamp: Date;
+    errorDate: Date;
 }
