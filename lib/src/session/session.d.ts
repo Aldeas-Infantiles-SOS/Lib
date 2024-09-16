@@ -2,12 +2,12 @@
    * Representa una sesión del sistema.
 */
 export interface SessionInfo {
-    /** Fecha y hora de inicio de la sesión */
+    /** Fecha y hora de inicio de la sesión. */
     startTime: Date;
-    /** Fecha y hora en que finaliza la sesión */
+    /** Fecha y hora en que finaliza la sesión. */
     endTime: Date;
-    /** Id de usuario */
+    /** Id de usuario. */
     userId: string;
-    /** Id de sesión */
+    /** Id de sesión. */
     sessionId: string;
 }

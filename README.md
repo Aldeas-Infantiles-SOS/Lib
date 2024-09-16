@@ -2,7 +2,7 @@
 
 ## Versión
 
-1.2.0
+1.2.1
 
 ## Notas de la versión
 
@@ -28,3 +28,5 @@ Atributos agregados:
 - Fecha y hora en que se registra el error.
   - Nombre atributo: errorDate.
   - Tipo: Date.
+
+### Problema de compilación con el nuevo modelo solucionado
