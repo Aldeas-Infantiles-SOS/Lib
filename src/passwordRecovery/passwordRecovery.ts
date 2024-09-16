@@ -10,7 +10,7 @@ export interface PasswordRecoveryInfo {
     temporalPassword: string;
 
     /** Fecha y hora de expiración de la contraseña temporal. */
-    passwordExpirationDate: Date;
+    temporalPasswordExpirationDate: Date;
 
     //** Token de autenticación asignado. */
     token: string;
