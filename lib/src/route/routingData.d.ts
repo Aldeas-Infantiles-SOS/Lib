@@ -16,4 +16,6 @@ export interface RoutingData {
     allowedRoles: UserRole[];
     /** Atributo opcional. Lista de las páginas hijas (submenús). */
     children?: RouteConfig[];
+    /** Posición con la que se desplegará en el menú, con respecto a las páginas del mismo nivel (hermanos). */
+    order: number;
 }
