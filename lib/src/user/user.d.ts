@@ -8,20 +8,22 @@ export type UserRole = 'Admin' | 'Operador' | 'Cuidador';
 export interface UserInfo {
     /** Id de firebase auth */
     firebaseUserId: string;
-    /** Nombre */
+    /** Nombre. */
     firstName: string;
-    /** Apellidos */
+    /** Apellidos. */
     lastName: string;
-    /** Correo electronico */
+    /** Correo electrónico. */
     email: string;
-    /** URL de la foto de perfil (almacenada en Firebase Storage) */
+    /** URL de la foto de perfil (almacenada en Firebase Storage). */
     profilePhoto: string;
-    /** Tipo de usuario - ver {@link UserType} */
+    /** Tipo de usuario - ver {@link UserType}. */
     userType: UserRole;
-    /** Puesto de trabajo */
+    /** Puesto de trabajo. */
     jobPosition: string;
-    /** Fecha y hora de creacion */
+    /** Fecha y hora de creacion. */
     created: number;
-    /** Fecha y hora de ultima actualizacion */
+    /** Fecha y hora de ultima actualizacion. */
     lastUpdate: number;
+    /** Indíca si el usuario tiene una contraseña temporal. */
+    tempPass: boolean;
 }
