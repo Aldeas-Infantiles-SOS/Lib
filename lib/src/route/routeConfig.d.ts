@@ -26,7 +26,7 @@ export type NavigationItem = {
 export interface RouteConfig {
     /** Etiqueta que se muestra en el menú. */
     label: string;
-    /** Enlace útil para el enlace de la aplicación. */
+    /** Enlace útil para el routing de la aplicación. */
     link: string;
     /** Atributo opcional. String que se utiliza para hacer match con el ícono que se utiliza dentro del menú. */
     icon?: string;

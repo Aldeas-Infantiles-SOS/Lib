@@ -2,6 +2,7 @@
 
 export {ErrorLogInfo} from './src/errorLog/errorLog';
 export {PasswordRecoveryInfo} from './src/passwordRecovery/passwordRecovery';
+export {RoutingData} from './src/route/routingData';
 export {RouteConfig, NavigationItem, STORAGE_KEY} from './src/route/routeConfig';
 export {SessionInfo} from './src/session/session';
 export {UserRole, UserInfo} from './src/user/user';
@@ -15,6 +16,9 @@ export enum FirestoreCollections {
 
   /** Colección de {@link PasswordRecoveryInfo}. */
   PasswordRecoveryInfo = 'passwordRecoveryInfo',
+
+  /** Colección de {@link RoutingData}. */
+  RoutingData = 'routingData',
 
   /** Colección de {@link RouteConfig}. */
   RouteConfig = 'routeConfig',
