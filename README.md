@@ -2,11 +2,10 @@
 
 ## Versión
 
-1.5.1
+1.5.2
 
 ## Notas de la versión
 
-### Colecciones PasswordRecoveryInfo y UserInfo actualizadas
+### Colecciones RoutingData actualizada
 
-- El atributo **temporalPassword** de la colección ***PasswordRecoveryInfo*** fue eliminado.  
-- Se agregó un nuevo atributo, **tempPass** de tipo booleano, a la colección ***UserInfo***.
+- Se agregó un nuevo atributo, **order** de tipo number, a la colección ***RoutingData***.
