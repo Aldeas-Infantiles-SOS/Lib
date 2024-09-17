@@ -4,8 +4,6 @@
 export interface PasswordRecoveryInfo {
     /** Correo del usuario para la recuperación de la contraseña. */
     userEmail: string;
-    /** Contraseña temporal asignada. */
-    temporalPassword: string;
     /** Fecha y hora de expiración de la contraseña temporal. */
     temporalPasswordExpirationDate: Date;
     token: string;
