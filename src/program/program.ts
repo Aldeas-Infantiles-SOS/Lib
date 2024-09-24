@@ -20,6 +20,6 @@ export interface ProgramInfo {
   /** Estado del programa. */
   estate: string;
 
-  /** Sede a la cual pertenece el programa. */
+  /** Tipo de Sede a la cual pertenece el programa. */
   sedeType: SedeType;
 }
