@@ -2,31 +2,25 @@
 
 ## Versión
 
-1.6.0
+1.6.1
 
 ## Notas de la versión
 
-### Modelo para el Programa creado
+### Modelo para user actualizado
 
-- El nombre de la colección es ***ProgramInfo*** y los atributos agregados son:
+Se agregaron los siguientes atributos:
 
-- Nombre del programa.
-  - Nombre atributo: name.
+- Indíca si el usuario está habilitado o deshabilitado.
+  - Nombre atributo: enabled.
+  - Tipo: boolean.
+- Documento de indentidad.
+  - Nombre atributo: identityCard.
   - Tipo: string.
-- Descripción del programa.
-  - Nombre atributo: description.
-  - Tipo: string.
-- Estado del programa.
-  - Nombre atributo: estate.
-  - Tipo: string.
-- Tipo de sede a la cual pertenece el programa.
-  - Nombre atributo: sedeType.
+- Sede a la que pertenece el usuario.
+  - Nombre atributo: office.
   - Tipo: SedeType.
+- Atributo opcional. Programa asignado al usuario (no requerido para administradosres).
+  - Nombre atributo: programName.
+  - Tipo: string.
 
-### Enum con los tipos de sede creado
-
-`enum SedeType {
-  SantaAna = 'Santa Ana',
-  TresRios = 'Tres Ríos',
-  Limon = 'Limón'
-}`
+Se agregó el rol ***SuperAdmin*** a **UserRole**.
