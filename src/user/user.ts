@@ -1,7 +1,9 @@
+import { SedeType } from "../program/program";
+
 /**
  * Tipo de usuario en el sistema.
  */
-export type UserRole =  'Admin'|'Operador'|'Cuidador';
+export type UserRole =  'SuperAdmin'|'Admin'|'Operador'|'Cuidador';
   
   /**
    * Representa un usuario del sistema.
@@ -18,11 +20,14 @@ export type UserRole =  'Admin'|'Operador'|'Cuidador';
   
     /** Correo electrónico. */
     email: string;
+
+    /** Documento de indentidad */
+    identityCard: string;
   
     /** URL de la foto de perfil (almacenada en Firebase Storage). */
     profilePhoto: string;
   
-    /** Tipo de usuario - ver {@link UserType}. */
+    /** Tipo de usuario - ver {@link UserRole}. */
     userType: UserRole;
   
     /** Puesto de trabajo. */
@@ -36,4 +41,13 @@ export type UserRole =  'Admin'|'Operador'|'Cuidador';
 
     /** Indíca si el usuario tiene una contraseña temporal. */
     tempPass: boolean;
+
+    /** Indíca si el usuario está habilitado o deshabilitado */
+    enabled: boolean;
+
+    /** Sede a la que pertenece el usuario */
+    office: SedeType;
+
+    /** Programa asignado al usuario (no requerido para administradosres) */
+    programName?: string;
   }
