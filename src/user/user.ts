@@ -21,7 +21,7 @@ export type UserRole =  'SuperAdmin'|'Admin'|'Operador'|'Cuidador';
     /** Correo electrónico. */
     email: string;
 
-    /** Documento de indentidad */
+    /** Documento de indentidad. */
     identityCard: string;
   
     /** URL de la foto de perfil (almacenada en Firebase Storage). */
@@ -42,12 +42,12 @@ export type UserRole =  'SuperAdmin'|'Admin'|'Operador'|'Cuidador';
     /** Indíca si el usuario tiene una contraseña temporal. */
     tempPass: boolean;
 
-    /** Indíca si el usuario está habilitado o deshabilitado */
+    /** Indíca si el usuario está habilitado o deshabilitado. */
     enabled: boolean;
 
-    /** Sede a la que pertenece el usuario */
+    /** Sede a la que pertenece el usuario. */
     office: SedeType;
 
-    /** Programa asignado al usuario (no requerido para administradosres) */
+    /** Programa asignado al usuario (no requerido para administradosres). */
     programName?: string;
   }
