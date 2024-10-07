@@ -4,6 +4,7 @@ export { ProgramInfo, SedeType } from './src/program/program';
 export { RoutingData } from './src/route/routingData';
 export { RouteConfig, NavigationItem, STORAGE_KEY } from './src/route/routeConfig';
 export { SessionInfo } from './src/session/session';
+export { TimeOffRequest } from './src/timeOffRequest/timeOffRequest';
 export { UserRole, UserInfo } from './src/user/user';
 /**
  * Colecciones de Firestore
@@ -21,6 +22,8 @@ export declare enum FirestoreCollections {
     RouteConfig = "routeConfig",
     /** Colección de {@link SessionInfo}. */
     SessionInfo = "sessionInfo",
+    /** Colección de {@link TimeOffRequest}. */
+    TimeOffRequest = "sessionInfo",
     /** Colección de {@link UserInfo}. */
     userInfo = "userInfo"
 }
