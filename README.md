@@ -17,12 +17,12 @@ Atributos agregados:
 - Nomenclatura del turno.
   - Nombre atributo: nomenclature.
   - Tipo: string.
-- Fecha y hora de inicio.
+- Hora de inicio.
   - Nombre atributo: startTime.
-  - Tipo: Date.
-- Fecha y hora en que finaliza.
+  - Tipo: string.
+- Hora en que finaliza.
   - Nombre atributo: endTime.
-  - Tipo: Date.
+  - Tipo: string.
 - Programa del turno.
   - Nombre atributo: program.
   - Tipo: string.
@@ -31,11 +31,4 @@ Atributos agregados:
   - Tipo: string.
 - Estado del turno.
   - Nombre atributo: state.
-  - Tipo: ShiftState.
-
-### Enum con los estados validos de un turno agregado
-
-`enum ShiftState {
-  Enaled = 'Habilitado',
-  Disabled = 'Deshabilitado'
-}`
+  - Tipo: boolean.

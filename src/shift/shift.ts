@@ -1,9 +1,3 @@
-/** Tipos de estado del turno */
-export enum ShiftState {
-    Enaled = 'Habilitado',
-    Disabled = 'Deshabilitado'
-}
-
 /**
    * Representa una turno en el sistema.
 */
@@ -14,11 +8,11 @@ export interface Shift {
     /** Nomenclatura del turno. */
     nomenclature: string;
 
-    /** Fecha y hora de inicio. */
-    startTime: Date;
+    /** Hora de inicio. */
+    startTime: string;
 
-    /** Fecha y hora en que finaliza. */
-    endTime: Date;
+    /** Hora en que finaliza. */
+    endTime: string;
 
     /** Programa del turno. */
     program: string;
@@ -26,6 +20,6 @@ export interface Shift {
     /** Color en hexadecimal para representar el turno. */
     color: string;
 
-    /** Estado del turno - ver {@link ShiftState}. */
-    state: ShiftState
+    /** Estado del turno. */
+    state: boolean;
 }
