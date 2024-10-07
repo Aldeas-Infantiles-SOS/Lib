@@ -1,5 +1,5 @@
 /**
-   * Representa una turno en el sistema.
+   * Representa un turno en el sistema.
 */
 export interface Shift {
     /** Nombre del turno. */

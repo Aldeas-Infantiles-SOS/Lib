@@ -2,6 +2,7 @@
 
 export {ErrorLogInfo} from './src/errorLog/errorLog';
 export {PasswordRecoveryInfo} from './src/passwordRecovery/passwordRecovery';
+export {ProfessionInfo} from './src/profession/profession';
 export {ProgramInfo, SedeType} from './src/program/program';
 export {RoutingData} from './src/route/routingData';
 export {RouteConfig, NavigationItem, STORAGE_KEY} from './src/route/routeConfig';
@@ -19,6 +20,9 @@ export enum FirestoreCollections {
 
   /** Colección de {@link PasswordRecoveryInfo}. */
   PasswordRecoveryInfo = 'passwordRecoveryInfo',
+
+  /** Colección de {@link ProfessionInfo}. */
+  ProfessionInfo = 'professionInfo',
 
   /** Colección de {@link ProgramInfo}. */
   ProgramInfo = 'programInfo',
