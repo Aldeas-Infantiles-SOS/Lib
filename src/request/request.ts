@@ -26,6 +26,9 @@ export interface Request {
     /** Nombre del cuidador solicitante. */
     caregiverName: string;
 
+    /** Correo del cuidador solicitante. */
+    email: string;
+
     /** Nombre del programa. */
     programName: string;
 
