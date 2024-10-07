@@ -3,6 +3,7 @@ export { PasswordRecoveryInfo } from './src/passwordRecovery/passwordRecovery';
 export { ProgramInfo, SedeType } from './src/program/program';
 export { RoutingData } from './src/route/routingData';
 export { RouteConfig, NavigationItem, STORAGE_KEY } from './src/route/routeConfig';
+export { Shift, ShiftState } from './src/shift/shift';
 export { SessionInfo } from './src/session/session';
 export { Request, RequestStatus, ResquestType } from './src/request/request';
 export { UserRole, UserInfo } from './src/user/user';
@@ -20,6 +21,8 @@ export declare enum FirestoreCollections {
     RoutingData = "routingData",
     /** Colección de {@link RouteConfig}. */
     RouteConfig = "routeConfig",
+    /** Colección de {@link Shift}. */
+    Shift = "shift",
     /** Colección de {@link SessionInfo}. */
     SessionInfo = "sessionInfo",
     /** Colección de {@link Request}. */
