@@ -6,7 +6,7 @@ export interface SessionInfo {
     startTime: Date;
 
     /** Fecha y hora en que finaliza la sesión. */
-    endTime: Date;
+    endTime: Date | null;
 
     /** Id de usuario. */
     userId: string;

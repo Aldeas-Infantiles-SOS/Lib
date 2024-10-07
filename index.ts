@@ -6,7 +6,7 @@ export {ProgramInfo, SedeType} from './src/program/program';
 export {RoutingData} from './src/route/routingData';
 export {RouteConfig, NavigationItem, STORAGE_KEY} from './src/route/routeConfig';
 export {SessionInfo} from './src/session/session';
-export {Request} from './src/request/request';
+export {Request, RequestStatus, ResquestType} from './src/request/request';
 export {UserRole, UserInfo} from './src/user/user';
 
 /**
