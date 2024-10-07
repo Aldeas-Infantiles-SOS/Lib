@@ -2,25 +2,33 @@
 
 ## Versión
 
-1.6.1
+1.7.0
 
 ## Notas de la versión
 
-### Modelo para user actualizado
+### Modelo para la colección de solicitud de vacaciones creado
 
+Nombre de la colección: **TimeOffRequest**.  
 Se agregaron los siguientes atributos:
 
-- Indíca si el usuario está habilitado o deshabilitado.
-  - Nombre atributo: enabled.
-  - Tipo: boolean.
-- Documento de indentidad.
-  - Nombre atributo: identityCard.
+- Nombre del cuidador.
+  - Nombre atributo: caregiverName.
   - Tipo: string.
-- Sede a la que pertenece el usuario.
+- Fecha y hora de inicio.
+  - Nombre atributo: startTime.
+  - Tipo: Date.
+- Fecha y hora en que finaliza.
+  - Nombre atributo: endTime.
+  - Tipo: Date.
+- Tipo de solicitud.
+  - Nombre atributo: resquestType.
+  - Tipo: string.
+- Sede a la que pertenece el cuidador.
   - Nombre atributo: office.
   - Tipo: SedeType.
-- Atributo opcional. Programa asignado al usuario (no requerido para administradosres).
+- Nombre del programa.
   - Nombre atributo: programName.
   - Tipo: string.
-
-Se agregó el rol ***SuperAdmin*** a **UserRole**.
+- Estado de la solicitud.
+  - Nombre atributo: status.
+  - Tipo: string.
