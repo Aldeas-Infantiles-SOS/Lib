@@ -2,25 +2,14 @@
 
 ## Versión
 
-1.6.1
+1.7.1
 
 ## Notas de la versión
 
-### Modelo para user actualizado
+### Actualización de la colección ***Request***
 
-Se agregaron los siguientes atributos:
+Actulización para poder utilizar los enum **RequestType** y **RequestStatus**.
 
-- Indíca si el usuario está habilitado o deshabilitado.
-  - Nombre atributo: enabled.
-  - Tipo: boolean.
-- Documento de indentidad.
-  - Nombre atributo: identityCard.
-  - Tipo: string.
-- Sede a la que pertenece el usuario.
-  - Nombre atributo: office.
-  - Tipo: SedeType.
-- Atributo opcional. Programa asignado al usuario (no requerido para administradosres).
-  - Nombre atributo: programName.
-  - Tipo: string.
+### Actualización de la colección ***Session***
 
-Se agregó el rol ***SuperAdmin*** a **UserRole**.
+Atributo **endTime** ahora puede ser null.

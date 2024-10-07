@@ -31,7 +31,7 @@ export interface UserInfo {
     tempPass: boolean;
     /** Indíca si el usuario está habilitado o deshabilitado. */
     enabled: boolean;
-    /** Sede a la que pertenece el usuario. */
+    /** Sede a la que pertenece el usuario  - ver {@link SedeType}. */
     office: SedeType;
     /** Programa asignado al usuario (no requerido para administradosres). */
     programName?: string;
