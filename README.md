@@ -2,20 +2,20 @@
 
 ## Versión
 
-1.8.0
+1.9.0
 
 ## Notas de la versión
 
-### Modelo para la colección de turno creado y agredo a la librería
+### Modelo para la colección de profesión creado y agredo a la librería
 
-Nombre de la colección ***Shift***.  
+Nombre de la colección ***ProfessionInfo***.  
 Atributos agregados:
 
-- Nombre del turno.
-  - Nombre atributo: shiftName.
+- Identificador único de la profesión.
+  - Nombre atributo: id.
   - Tipo: string.
-- Nomenclatura del turno.
-  - Nombre atributo: nomenclature.
+- Nombre de la profesión.
+  - Nombre atributo: name.
   - Tipo: string.
 - Hora de inicio.
   - Nombre atributo: startTime.
@@ -23,12 +23,9 @@ Atributos agregados:
 - Hora en que finaliza.
   - Nombre atributo: endTime.
   - Tipo: string.
-- Programa del turno.
-  - Nombre atributo: program.
+- Descripción de la profesión.
+  - Nombre atributo: description.
   - Tipo: string.
-- Color en hexadecimal para representar el turno.
-  - Nombre atributo: color.
-  - Tipo: string.
-- Estado del turno.
+- Estado de la profesión.
   - Nombre atributo: state.
   - Tipo: boolean.
