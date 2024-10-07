@@ -4,7 +4,7 @@ import { SedeType } from "../program/program";
  */
 export declare enum ResquestType {
     Vacaciones = "Vacaciones",
-    Cumpleaños = "Cumplea\u00F1os",
+    Cumpleanos = "Cumplea\u00F1os",
     Incapacidad = "Incapacidad",
     PermisoSinGoceDeSalario = "Permiso sin goce de salario"
 }
