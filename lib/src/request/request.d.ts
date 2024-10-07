@@ -22,6 +22,8 @@ export declare enum RequestStatus {
 export interface Request {
     /** Nombre del cuidador solicitante. */
     caregiverName: string;
+    /** Correo del cuidador solicitante. */
+    email: string;
     /** Nombre del programa. */
     programName: string;
     /** Tipo de solicitud - ver {@link ResquestType}. */
