@@ -2,7 +2,7 @@ import { SedeType } from "../program/program";
 /**
  * Tipos de solicitud del sistema.
  */
-export declare enum ResquestType {
+export declare enum RequestType {
     Vacaciones = "Vacaciones",
     Cumpleanos = "Cumplea\u00F1os",
     Incapacidad = "Incapacidad",
@@ -20,14 +20,16 @@ export declare enum RequestStatus {
  * Representa la solicitud de vacaciones de un cuidador.
  */
 export interface Request {
+    /** Identificador único de la solicitud. */
+    id: string;
     /** Nombre del cuidador solicitante. */
     caregiverName: string;
     /** Correo del cuidador solicitante. */
     email: string;
     /** Nombre del programa. */
     programName: string;
-    /** Tipo de solicitud - ver {@link ResquestType}. */
-    resquestType: ResquestType;
+    /** Tipo de solicitud - ver {@link RequestType}. */
+    requestType: RequestType;
     /** Fecha y hora de inicio. */
     startTime: Date;
     /** Fecha y hora en que finaliza. */
