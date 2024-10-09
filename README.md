@@ -2,7 +2,7 @@
 
 ## Versión
 
-1.9.1
+1.9.2
 
 ## Notas de la versión
 
@@ -10,6 +10,6 @@
 
 Atributo agregado:
 
-- Correo del cuidador solicitante.
-  - Nombre atributo: email.
+- Identificador único de la solicitud.
+  - Nombre atributo: id.
   - Tipo: string.
