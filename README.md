@@ -2,7 +2,7 @@
 
 ## Versión
 
-1.9.2
+1.9.3
 
 ## Notas de la versión
 
@@ -10,6 +10,6 @@
 
 Atributo agregado:
 
-- Identificador único de la solicitud.
-  - Nombre atributo: id.
+- Motivo de rechazo o aprobación de la solicitud.
+  - Nombre atributo: observation.
   - Tipo: string.
