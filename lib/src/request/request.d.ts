@@ -40,4 +40,6 @@ export interface Request {
     office: SedeType;
     /** Estado de la solicitud - ver {@link RequestStatus}. */
     status: RequestStatus;
+    /** Motivo de rechazo o aprobación de la solicitud. */
+    observation: string;
 }
