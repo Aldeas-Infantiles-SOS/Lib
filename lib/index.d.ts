@@ -2,6 +2,7 @@ export { ErrorLogInfo } from './src/errorLog/errorLog';
 export { PasswordRecoveryInfo } from './src/passwordRecovery/passwordRecovery';
 export { ProfessionInfo } from './src/profession/profession';
 export { ProgramInfo, SedeType } from './src/program/program';
+export { RoleInfo } from './src/role/role';
 export { RoutingData } from './src/route/routingData';
 export { RouteConfig, NavigationItem, STORAGE_KEY } from './src/route/routeConfig';
 export { Shift } from './src/shift/shift';
@@ -20,6 +21,8 @@ export declare enum FirestoreCollections {
     ProfessionInfo = "professionInfo",
     /** Colección de {@link ProgramInfo}. */
     ProgramInfo = "programInfo",
+    /** Colección de {@link RoleInfo}. */
+    RoleInfo = "roleInfo",
     /** Colección de {@link RoutingData}. */
     RoutingData = "routingData",
     /** Colección de {@link RouteConfig}. */
