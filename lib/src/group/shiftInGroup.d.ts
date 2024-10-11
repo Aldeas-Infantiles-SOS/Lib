@@ -1,11 +1,11 @@
 export declare enum DayOfWeek {
-    Sunday = "Sunday",
-    Monday = "Monday",
-    Tuesday = "Tuesday",
-    Wednesday = "Wednesday",
-    Thursday = "Thursday",
-    Friday = "Friday",
-    Saturday = "Saturday"
+    Sunday = "Domingo",
+    Monday = "Lunes",
+    Tuesday = "Martes",
+    Wednesday = "Mi\u00E9rcoles",
+    Thursday = "Jueves",
+    Friday = "Viernes",
+    Saturday = "S\u00E1bado"
 }
 /**
  * Representa la asociación de turnos con los grupos del sistema.
