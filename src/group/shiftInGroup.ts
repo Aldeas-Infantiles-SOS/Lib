@@ -6,7 +6,7 @@ export enum DayOfWeek {
     Thursday = 'Thursday',
     Friday = 'Friday',
     Saturday = 'Saturday'
-  }
+}
 
 /**
  * Representa la asociación de turnos con los grupos del sistema.

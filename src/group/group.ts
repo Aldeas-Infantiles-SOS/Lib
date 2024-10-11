@@ -2,15 +2,15 @@
  * Representa los grupos del sistema.
  */
 export interface GroupInfo {
-  /* Id de firebase del grupo. */
+  /** Id de firebase del grupo. */
   firebaseGroupId: string;
 
-  /* Nombre del grupo. */
+  /** Nombre del grupo. */
   name: string;
 
-  /* Descripción del grupo. */
+  /** Descripción del grupo. */
   description: string;
 
-  /* Indica si el grupo se encuentra activo o no. */
+  /** Indica si el grupo se encuentra activo o no. */
   state: boolean;
 }
