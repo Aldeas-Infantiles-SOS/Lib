@@ -7,7 +7,7 @@ export { RoleInfo } from './src/role/role';
 export { RoutingData } from './src/route/routingData';
 export { RouteConfig, NavigationItem, STORAGE_KEY } from './src/route/routeConfig';
 export { Shift } from './src/shift/shift';
-export { ShiftInGroupInfo } from './src/group/shiftInGroup';
+export { ShiftInGroupInfo, ShiftDayInfo } from './src/group/shiftInGroup';
 export { SessionInfo } from './src/session/session';
 export { Request, RequestStatus, RequestType } from './src/request/request';
 export { UserRole, UserInfo } from './src/user/user';
