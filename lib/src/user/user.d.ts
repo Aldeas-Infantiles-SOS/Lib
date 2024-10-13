@@ -17,6 +17,8 @@ export interface UserInfo {
     email: string;
     /** Documento de indentidad. */
     identityCard: string;
+    /** Número de teléfono. */
+    phoneNumber?: string;
     /** URL de la foto de perfil (almacenada en Firebase Storage). */
     profilePhoto: string;
     /** Tipo de usuario - ver {@link UserRole}. */
