@@ -1,29 +1,27 @@
+import { DocumentReference, DocumentData } from "firebase/firestore";
+
 export enum DayOfWeek {
     Sunday = 'Domingo',
     Monday = 'Lunes',
     Tuesday = 'Martes',
-    Wednesday = 'Miércoles',
+    Wednesday = 'Mi\u00E9rcoles',
     Thursday = 'Jueves',
     Friday = 'Viernes',
-    Saturday = 'Sábado'
+    Saturday = 'S\u00E1bado'
 }
 
 /**
  * Representa la asociación de turnos con los grupos del sistema.
  */
 export interface ShiftInGroupInfo {
-    /** Id de firebase del grupo al cual está vinculado el turno. */
-    firebaseGroupId: string;
-  
-    /** Nombre del turno. */
-    name: string;
-  
-    /** Nomenclatura del turno. */
-    nomenclature: string;
-  
+    
+}
+
+/** Representa la información de turno de un día en específico. */
+export interface ShiftDayInfo extends ShiftInGroupInfo {
+    /** Referencia al turno. */
+    shiftId: DocumentReference<DocumentData>;
+
     /** Día de la semana asociado al turno - ver {@link DayOfWeek}.*/
     day: DayOfWeek;
-  
-    /** Indica si el turno se encuentra activo o no. */
-    state: boolean;
 }
