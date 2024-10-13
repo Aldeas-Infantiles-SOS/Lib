@@ -23,7 +23,10 @@ export type UserRole =  'SuperAdmin'|'Admin'|'Operador'|'Cuidador';
 
     /** Documento de indentidad. */
     identityCard: string;
-  
+
+    /** Número de teléfono. */
+    phoneNumber?: string;
+    
     /** URL de la foto de perfil (almacenada en Firebase Storage). */
     profilePhoto: string;
   
