@@ -2,6 +2,8 @@
    * Representa un turno en el sistema.
 */
 export interface Shift {
+    /** Identificador único del turno. */
+    id: string;
     /** Nombre del turno. */
     shiftName: string;
     /** Nomenclatura del turno. */
