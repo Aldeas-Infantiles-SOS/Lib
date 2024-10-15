@@ -19,4 +19,6 @@ export interface ShiftDayInfo extends ShiftInGroupInfo {
     shiftId: DocumentReference<DocumentData>;
     /** Día de la semana asociado al turno - ver {@link DayOfWeek}.*/
     day: DayOfWeek;
+    /** Indica la fila en la que se encuentra el turno. */
+    rowIndex: number;
 }
