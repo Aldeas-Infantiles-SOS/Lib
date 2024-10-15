@@ -2,16 +2,16 @@
 
 ## Versión
 
-1.12.1
+1.12.2
 
 ## Notas de la versión
 
-### Modelo para la colección de Turnos en un día en específico actualizado
+### Modelo para la colección de Turnos actualizado
 
-Nombre del modelo ***ShiftDayInfo***.  
+Nombre del modelo ***Shift***.  
 
 Atributo agregado:
 
-- Indica la fila en la que se encuentra el turno.
-  - Nombre atributo: rowIndex.
-  - Tipo: number.
+- Identificador único del turno.
+  - Nombre atributo: id.
+  - Tipo: string.
