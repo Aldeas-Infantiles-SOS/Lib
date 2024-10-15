@@ -2,26 +2,16 @@
 
 ## Versión
 
-1.12.0
+1.12.1
 
 ## Notas de la versión
 
-### Modelo para la colección de Turno con los Grupos actualizado
-
-Nombre del modelo ***ShiftInGroupInfo***.
-
-Se eliminarón sus atributos.
-
-### Modelo para la colección de Turnos en un día en específico creado
+### Modelo para la colección de Turnos en un día en específico actualizado
 
 Nombre del modelo ***ShiftDayInfo***.  
-Hereda a ***ShiftInGroupInfo***.
 
-Atributos agregados:
+Atributo agregado:
 
-- Referencia al turno.
-  - Nombre atributo: shiftId.
-  - Tipo: `DocumentReference<DocumentData>`.
-- Día de la semana asociado al turno.
-  - Nombre atributo: day.
-  - Tipo: DayOfWeek.
+- Indica la fila en la que se encuentra el turno.
+  - Nombre atributo: rowIndex.
+  - Tipo: number.
