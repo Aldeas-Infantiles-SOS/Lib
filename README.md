@@ -2,16 +2,34 @@
 
 ## Versión
 
-1.12.2
+1.13.0
 
 ## Notas de la versión
 
-### Modelo para la colección de Turnos actualizado
+### Enum con las collecciones usadas creado
 
-Nombre del modelo ***Shift***.  
+`enum UserCollections {
+  errorLogInfo,
+  groups,
+  professionInfo,
+  programInfo,
+  request,
+  role,
+  routingData,
+  sessionInfo,
+  shift,
+  shifts,
+  shiftInGroup,
+  userInfo
+}`
+
+### Modelo para la colección de Usuario actualizado
+
+Nombre del modelo ***UserInfo***.  
 
 Atributo agregado:
 
-- Identificador único del turno.
-  - Nombre atributo: id.
+- Llave secreta encriptada usada para el doble factor de autenticación.
+  - Atributo opcional.
+  - Nombre atributo: secretKey.
   - Tipo: string.
