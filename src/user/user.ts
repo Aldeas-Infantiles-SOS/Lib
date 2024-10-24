@@ -53,4 +53,7 @@ export type UserRole =  'SuperAdmin'|'Admin'|'Operador'|'Cuidador';
 
     /** Programa asignado al usuario (no requerido para administradosres). */
     programName?: string;
+
+    /** Llave secreta encriptada usada para el doble factor de autenticación. */
+    secretKey?: string;
   }

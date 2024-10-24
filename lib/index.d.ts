@@ -10,6 +10,7 @@ export { Shift } from './src/shift/shift';
 export { ShiftInGroupInfo, ShiftDayInfo } from './src/group/shiftInGroup';
 export { SessionInfo } from './src/session/session';
 export { Request, RequestStatus, RequestType } from './src/request/request';
+export { UsedCollections } from './src/usedCollections/usedCollections';
 export { UserRole, UserInfo } from './src/user/user';
 /**
  * Colecciones de Firestore
