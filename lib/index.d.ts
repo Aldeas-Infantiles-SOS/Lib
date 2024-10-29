@@ -1,4 +1,5 @@
 export { ErrorLogInfo } from './src/errorLog/errorLog';
+export { EventInfo } from './src/event/event';
 export { GroupInfo } from './src/group/group';
 export { PasswordRecoveryInfo } from './src/passwordRecovery/passwordRecovery';
 export { ProfessionInfo } from './src/profession/profession';

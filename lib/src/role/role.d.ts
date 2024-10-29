@@ -1,6 +1,8 @@
 import { DocumentData, DocumentReference } from "firebase/firestore";
 import { DayOfWeek } from "../group/shiftInGroup";
-/** Representa un rol del sistema. */
+/**
+ * Representa un rol del sistema.
+ */
 export interface RoleInfo {
     /** Nombre del cuidador asociado al rol. */
     caregiverName: string;
