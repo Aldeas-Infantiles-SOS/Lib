@@ -32,7 +32,7 @@ export interface RoleInfo {
     /** Nombre del turno asociado al rol. */
     shiftName: string;
     
-    /** Día de la semana associado al rol. */
+    /** Día de la semana asociado al rol. */
     dayOfWeek: DayOfWeek;
     
     /** Índice de fila asociado al rol. */

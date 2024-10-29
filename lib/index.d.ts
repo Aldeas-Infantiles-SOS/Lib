@@ -14,11 +14,13 @@ export { Request, RequestStatus, RequestType } from './src/request/request';
 export { UsedCollections } from './src/usedCollections/usedCollections';
 export { UserRole, UserInfo } from './src/user/user';
 /**
- * Colecciones de Firestore
+ * Colecciones de Firestore.
  */
 export declare enum FirestoreCollections {
     /** Colección de {@link ErrorLogInfo}. */
     ErrorLogInfo = "errorLogInfo",
+    /** Colección de {@link EventInfo}. */
+    EventInfo = "eventInfo",
     /** Colección de {@link GroupInfo}. */
     GroupInfo = "groupInfo",
     /** Colección de {@link PasswordRecoveryInfo}. */
