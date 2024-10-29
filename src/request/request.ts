@@ -55,4 +55,7 @@ export interface Request {
     
     /** Motivo de rechazo o aprobación de la solicitud. */
     observation: string;
+
+    /** Descripción de la cancelación.*/
+    cancelDescription: string;
 }
