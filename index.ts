@@ -1,6 +1,7 @@
 // ! Friendly remind: Exportar cada interface 
 
 export {ErrorLogInfo} from './src/errorLog/errorLog';
+export {EventInfo} from './src/event/event';
 export {GroupInfo} from './src/group/group'
 export {PasswordRecoveryInfo} from './src/passwordRecovery/passwordRecovery';
 export {ProfessionInfo} from './src/profession/profession';
@@ -16,11 +17,14 @@ export {UsedCollections} from './src/usedCollections/usedCollections';
 export {UserRole, UserInfo} from './src/user/user';
 
 /**
- * Colecciones de Firestore
+ * Colecciones de Firestore.
  */
 export enum FirestoreCollections {
   /** Colección de {@link ErrorLogInfo}. */
   ErrorLogInfo = 'errorLogInfo',
+
+  /** Colección de {@link EventInfo}. */
+  EventInfo = 'eventInfo',
 
   /** Colección de {@link GroupInfo}. */
   GroupInfo = 'groupInfo',
