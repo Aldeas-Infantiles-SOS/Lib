@@ -1,22 +1,38 @@
-import { Shift } from "../shift/shift";
+import { DocumentData, DocumentReference } from "firebase/firestore";
+import { DayOfWeek } from "../group/shiftInGroup";
 
 /** Representa un rol del sistema. */
 export interface RoleInfo {
-    /** Grupo asociado al rol. */
-    group: string;
-    
+    /** Nombre del cuidador asociado al rol. */
+    caregiverName: string;
+
     /** Fecha asociada al rol. */
     date: Date;
 
-    /** Turno plantilla asociada. */ 
-    shift: Shift;
+    /** Nombre del grupo asociado al rol. */
+    groupName: string;
 
-    /** Nombre de evento. */
-    event: string;
-
-    /** Nombre del cuidador asociado. */
-    caregiverName: string;
-
-    /** Id de firebase del cuidador. */
-    firebaseCaregiverId: string;
+    /** Identificador de evento. */
+    eventId?: DocumentReference<DocumentData>[];
+    
+    /** Color en hexadecimal para representar al rol. */
+    color: string;
+    
+    /** Nomenclatura del rol. */
+    nomenclature: string;
+    
+    /** Hora de inicio. */
+    startTime: string;
+    
+    /** Hora en que finaliza. */
+    endTime: string;
+    
+    /** Nombre del turno asociado al rol. */
+    shiftName: string;
+    
+    /** Día de la semana associado al rol. */
+    dayOfWeek: DayOfWeek;
+    
+    /** Índice de fila asociado al rol. */
+    rowIndex: number;
 }
