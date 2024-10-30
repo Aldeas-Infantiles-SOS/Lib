@@ -16,7 +16,9 @@ export enum RequestType {
 export enum RequestStatus {
     Pendiente = 'Pendiente',
     Aprobada = 'Aprobada',
-    Rechazada = 'Rechazada'
+    Rechazada = 'Rechazada',
+    Revision = 'En revisión',
+    Cancelada = 'Cancelada'
 }
 
 /**

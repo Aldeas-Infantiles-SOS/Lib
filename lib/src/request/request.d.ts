@@ -14,7 +14,9 @@ export declare enum RequestType {
 export declare enum RequestStatus {
     Pendiente = "Pendiente",
     Aprobada = "Aprobada",
-    Rechazada = "Rechazada"
+    Rechazada = "Rechazada",
+    Revision = "En revisi\u00F3n",
+    Cancelada = "Cancelada"
 }
 /**
  * Representa la solicitud de vacaciones de un cuidador.

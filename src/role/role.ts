@@ -6,7 +6,7 @@ import { DayOfWeek } from "../group/shiftInGroup";
  */
 export interface RoleInfo {
     /** Nombre del cuidador asociado al rol. */
-    caregiverName: string;
+    caregiverName?: string;
 
     /** Fecha asociada al rol. */
     date: Date;
