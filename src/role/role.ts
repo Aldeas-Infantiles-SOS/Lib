@@ -8,8 +8,11 @@ export interface RoleInfo {
     /** Nombre del cuidador asociado al rol. */
     caregiverName?: string;
 
+    /** Identificador del cuidador asociado al rol. */
+    caregiverId?: string;
+
     /** Fecha asociada al rol. */
-    date: Date;
+    date?: Date;
 
     /** Nombre del grupo asociado al rol. */
     groupName: string;
