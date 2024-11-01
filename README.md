@@ -2,15 +2,23 @@
 
 ## Versión
 
-1.14.3
+1.14.4
 
 ## Notas de la versión
 
-### Modelo para la colección de Grupo actualizado
+### Modelo para la colección de Rol actualizado
 
-Nombre del modelo: ***GroupInfo***.  
+Nombre del modelo: ***RoleInfo***.  
 Atributo agregado:
 
-- Programa al cual pertenece el grupo.
-  - Nombre atributo: program.
+- Identificador del cuidador asociado al rol.
+  - Atributo opcional.
+  - Nombre atributo: caregiverId.
   - Tipo: string.
+
+Atributo actualizado:
+
+- Fecha asociada al rol.
+  - Atributo opcional.
+  - Nombre atributo: date.
+  - Tipo: Date.
