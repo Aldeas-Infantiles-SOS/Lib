@@ -13,4 +13,7 @@ export interface GroupInfo {
 
   /** Indica si el grupo se encuentra activo o no. */
   state: boolean;
+
+  /** Programa al cual pertenece el grupo. */
+  program: string
 }
