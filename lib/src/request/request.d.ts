@@ -46,4 +46,6 @@ export interface Request {
     observation: string;
     /** Descripción de la cancelación.*/
     cancelDescription: string;
+    /** Indica el estado cancelado de la solicitud. */
+    cancelled: boolean;
 }

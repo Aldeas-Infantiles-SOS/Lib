@@ -6,19 +6,11 @@
 
 ## Notas de la versión
 
-### Modelo para la colección de Rol actualizado
+### Modelo para la colección de Solicitud actualizado
 
-Nombre del modelo: ***RoleInfo***.  
-Atributo agregado:
-
-- Identificador del cuidador asociado al rol.
-  - Atributo opcional.
-  - Nombre atributo: caregiverId.
-  - Tipo: string.
-
+Nombre del modelo: ***Request***.  
 Atributo actualizado:
 
-- Fecha asociada al rol.
-  - Atributo opcional.
-  - Nombre atributo: date.
-  - Tipo: Date.
+- Indica el estado cancelado de la solicitud.
+  - Nombre atributo: cencelled.
+  - Tipo: boolean.

@@ -60,4 +60,7 @@ export interface Request {
 
     /** Descripción de la cancelación.*/
     cancelDescription: string;
+
+    /** Indica el estado cancelado de la solicitud. */
+    cancelled: boolean;
 }
