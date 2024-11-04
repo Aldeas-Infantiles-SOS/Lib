@@ -1,14 +1,14 @@
 export enum UsedCollections {
-    errorLogInfo,
-    groups,
-    professionInfo,
-    programInfo,
-    request,
-    role,
-    routingData,
-    sessionInfo,
-    shift,
-    shifts,
-    shiftInGroup,
-    userInfo
+    errorLogInfo = 'errorLogInfo',
+    groups = 'groups',
+    professionInfo = 'professionInfo',
+    programInfo = 'programInfo',
+    request = 'request',
+    role = 'role',
+    routingData = 'routingData',
+    sessionInfo = 'sessionInfo',
+    shift = 'shift',
+    shifts = 'shifts',
+    shiftInGroup = 'shiftInGroup',
+    userInfo = 'userInfo'
 };
