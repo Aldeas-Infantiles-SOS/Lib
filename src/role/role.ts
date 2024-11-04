@@ -1,5 +1,6 @@
 import { DocumentData, DocumentReference } from "firebase/firestore";
 import { DayOfWeek } from "../group/shiftInGroup";
+import { SedeType } from "../program/program";
 
 /**
  * Representa un rol del sistema.
@@ -40,4 +41,10 @@ export interface RoleInfo {
     
     /** Índice de fila asociado al rol. */
     rowIndex: number;
+
+    /** Nombre del programa asociado al rol. */
+    programName: string;
+
+    /** Sede asociada al rol  - ver {@link SedeType}. */
+    office: SedeType;
 }
