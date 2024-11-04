@@ -5,7 +5,7 @@ export type MailConfigFormValues = {
     /** Servidor smtp utilizado. */
     smtpServer: string;
 
-    /** Puerto utilizado */
+    /** Puerto utilizado. */
     port: number;
 
     /** Correo asociado a la configuración. */

@@ -16,9 +16,9 @@ export interface EventInfo {
     /** Descripción del evento. */
     description: string;
 
-    /** Nombre del programa asociado evento. */
+    /** Nombre del programa asociado al evento. */
     programName: string;
 
-    /** Sede asociada al rol  - ver {@link SedeType}. */
+    /** Sede asociada al evento  - ver {@link SedeType}. */
     office: SedeType;
 }

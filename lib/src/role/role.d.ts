@@ -29,8 +29,8 @@ export interface RoleInfo {
     dayOfWeek: DayOfWeek;
     /** Índice de fila asociado al rol. */
     rowIndex: number;
-    /** Nombre del programa asociado rol. */
+    /** Nombre del programa asociado al rol. */
     programName: string;
-    /** Sede asociada rol  - ver {@link SedeType}. */
+    /** Sede asociada al rol  - ver {@link SedeType}. */
     office: SedeType;
 }
