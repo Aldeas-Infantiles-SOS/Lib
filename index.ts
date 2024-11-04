@@ -2,7 +2,8 @@
 
 export {ErrorLogInfo} from './src/errorLog/errorLog';
 export {EventInfo} from './src/event/event';
-export {GroupInfo} from './src/group/group'
+export {GroupInfo} from './src/group/group';
+export {MailConfigFormValues} from './src/mailConfigForm/mailConfigForm';
 export {PasswordRecoveryInfo} from './src/passwordRecovery/passwordRecovery';
 export {ProfessionInfo} from './src/profession/profession';
 export {ProgramInfo, SedeType} from './src/program/program';

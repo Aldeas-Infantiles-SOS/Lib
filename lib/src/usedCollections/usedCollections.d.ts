@@ -1,3 +1,6 @@
+/**
+ * Enum con las colecciones usadas en el proyecto.
+ */
 export declare enum UsedCollections {
     errorLogInfo = "errorLogInfo",
     groups = "groups",
