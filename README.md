@@ -9,60 +9,35 @@
 ### Modelo para la colección de Rol actualizado
 
 Nombre del modelo: ***RolInfo***.  
-Atributos agregados:
+Atributos actualizados:
 
 - Nombre del programa asociado rol.
+  - Atributo opcional.
   - Nombre atributo: programName.
   - Tipo: string.
 - Sede asociada rol.
+  - Atributo opcional.
   - Nombre atributo: office.
   - Tipo: SedeType.
 
 ### Modelo para la colección de Evento actualizado
 
 Nombre del modelo: ***EventInfo***.  
-Atributos agregados:
+Atributos actualizados:
 
 - Nombre del programa asociado al evento.
+  - Atributo opcional.
   - Nombre atributo: programName.
   - Tipo: string.
 - Sede asociada al evento.
+  - Atributo opcional.
   - Nombre atributo: office.
   - Tipo: SedeType.
 
-### Enum que contiene las colecciones utilziadas actualizado
+### Enum que contiene las colecciones utilizadas actualizado
 
-Ahora cada constante tiene asignado un valor.
+Constantes agregadas:
 
-`enum UsedCollections {`  
-    `errorLogInfo = 'errorLogInfo',`  
-    `groups = 'groups',`  
-    `professionInfo = 'professionInfo',`  
-    `programInfo = 'programInfo',`  
-    `request = 'request',`  
-    `role = 'role',`  
-    `routingData = 'routingData',`  
-    `sessionInfo = 'sessionInfo',`  
-    `shift = 'shift',`  
-    `shifts = 'shifts',`  
-    `shiftInGroup = 'shiftInGroup',`  
-    `userInfo = 'userInfo'`  
-`};`
-
-### Type para la configuración de correo creado
-
-Nombre del type MailConfigFormValues.
-Atributos agregados:
-
-- Servidor smtp utilizado.
-  - Nombre atributo: smtpServer.
-  - Tipo: string.
-- Puerto utilizado.
-  - Nombre atributo: port.
-  - Tipo: number.
-- Correo asociado a la configuración.
-  - Nombre atributo: email.
-  - Tipo: string.
-- Contraseña asociada a la configuración.
-  - Nombre atributo: password.
-  - Tipo: string.
+- mailConfigs = 'mailConfigs'
+- globalConfig = 'globalConfig'
+- event = 'event'
