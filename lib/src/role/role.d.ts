@@ -30,7 +30,7 @@ export interface RoleInfo {
     /** Índice de fila asociado al rol. */
     rowIndex: number;
     /** Nombre del programa asociado al rol. */
-    programName: string;
+    programName?: string;
     /** Sede asociada al rol  - ver {@link SedeType}. */
-    office: SedeType;
+    office?: SedeType;
 }

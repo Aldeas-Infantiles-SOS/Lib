@@ -13,5 +13,8 @@ export enum UsedCollections {
     shift = 'shift',
     shifts = 'shifts',
     shiftInGroup = 'shiftInGroup',
-    userInfo = 'userInfo'
+    userInfo = 'userInfo',
+    mailConfigs = 'mailConfigs',
+    globalConfig = 'globalConfig',
+    event = 'event'
 };
