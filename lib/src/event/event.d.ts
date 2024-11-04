@@ -1,3 +1,4 @@
+import { SedeType } from "../program/program";
 /**
  * Representa un evento del sistema.
  */
@@ -10,4 +11,8 @@ export interface EventInfo {
     groupName: string;
     /** Descripción del evento. */
     description: string;
+    /** Nombre del programa asociado evento. */
+    programName: string;
+    /** Sede asociada al rol  - ver {@link SedeType}. */
+    office: SedeType;
 }
