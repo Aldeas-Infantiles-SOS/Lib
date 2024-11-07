@@ -6,6 +6,9 @@ import { SedeType } from "../program/program";
  * Representa un rol del sistema.
  */
 export interface RoleInfo {
+    /** Identificar único del del rol. */
+    id: string;
+
     /** Nombre del cuidador asociado al rol. */
     caregiverName?: string;
 
