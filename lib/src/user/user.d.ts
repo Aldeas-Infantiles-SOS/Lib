@@ -39,4 +39,8 @@ export interface UserInfo {
     programName?: string;
     /** Llave secreta encriptada usada para el doble factor de autenticación. */
     secretKey?: string;
+    /** Código asignado para restablecer el código QR. */
+    codeResetQr?: number;
+    /** Fecha y hora de expiración del código para restablecer el código QR.*/
+    codeResetQrExpirationDate?: Date;
 }
