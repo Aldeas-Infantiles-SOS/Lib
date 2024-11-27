@@ -1,3 +1,4 @@
+import { SedeType } from "../program/program";
 /**
    * Representa una profesión en el sistema.
 */
@@ -14,4 +15,6 @@ export interface ProfessionInfo {
     description: string;
     /** Estado de la profesión. */
     state: boolean;
+    /** Sede asociada a la profesión del usuario. */
+    office: SedeType;
 }

@@ -2,21 +2,15 @@
 
 ## Versión
 
-1.15.2
+1.15.4
 
 ## Notas de la versión
 
-### Modelo para la colección de Usuario actualizado
+### Modelo para la colección de Profesión actualizado
 
-Nombre del modelo: ***UserInfo***.  
-Atributos agregados:
+Nombre del modelo: ***ProfessionInfo***.  
+Atributo agregado:
 
-- Código asignado para restablecer el código QR.
-  - Atributo opcional.
-  - Nombre atributo: codeResetQr.
-  - Tipo: number.
-
-- Fecha y hora de expiración del código para restablecer el código QR.
-  - Atributo opcional.
-  - Nombre atributo: codeResetQrExpirationDate.
-  - Tipo: Date.
+- Sede asociada a la profesión del usuario.
+  - Nombre atributo: office.
+  - Tipo: SedeType.
